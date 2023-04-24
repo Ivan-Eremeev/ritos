@@ -1,0 +1,190 @@
+/* footer */
+.footer {
+  padding: 48px 0 96px;
+  background-color: $primary_color;
+  color: #fff;
+
+  &__top {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    padding: 44px 0;
+    border-top: 1px solid $border_color;
+    border-bottom: 1px solid $border_color;
+  }
+
+  &__logo {
+    display: block;
+    flex-shrink: 0;
+    max-width: 135px;
+  }
+
+  &__nav {}
+
+  &__menu {
+    display: flex;
+    margin-left: -20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    li {
+      margin-left: 20px;
+
+      &.active {
+        a {
+          color: $secondary_color;
+        }
+      }
+
+      a {
+        color: #fff;
+        white-space: nowrap;
+
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $secondary_color;
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin-left: -22px;
+
+    a {
+      padding: 5px;
+      margin-left: 22px;
+      fill: #fff;
+      flex-shrink: 0;
+
+      svg {
+        display: block;
+        max-width: 14px;
+        max-height: 14px;
+      }
+
+      @include media-breakpoint-up(md) {
+        &:hover {
+          fill: $secondary_color;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 33px 0;
+    border-bottom: 1px solid $border_color;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -38px;
+  }
+
+  &__list {
+    width: 50%;
+    margin-top: 38px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    li {
+      margin: 14px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #fff;
+
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $secondary_color;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding: 40px 0 70px;
+
+    &__social {
+      margin-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    // &__top {
+    //   .row {
+    //     > * {
+    //       width: auto !important;
+    //     }
+    //   }
+    // }
+    &__lists {
+      margin-top: -20px;
+    }
+
+    &__list {
+      margin-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 30px 0 50px;
+
+    &__top {
+      padding: 30px 0;
+    }
+
+    &__logo {
+      max-width: 100px;
+    }
+
+    &__nav {
+      margin-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__menu {
+      display: block;
+
+      li {
+        a {
+          display: block;
+          padding: 10px 0;
+        }
+      }
+    }
+
+    &__nav {
+      width: 100%;
+    }
+
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+/* /footer */

@@ -1,0 +1,35 @@
+/* benefit */
+.benefit { 
+  .title {
+    max-width: 580px;
+  }
+  &__item {
+    padding: 47px 0;
+    border-top: 1px solid $border_color;
+    &:last-child {
+      border-bottom: 1px solid $border_color;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  &__text {
+    
+  }
+  @include media-breakpoint-down(xl) {
+
+  }
+  @include media-breakpoint-down(md) {
+    &__item {
+      padding: 20px 0;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 5px;
+    }
+  }
+}
+/* /benefit */

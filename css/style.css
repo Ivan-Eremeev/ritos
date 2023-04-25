@@ -6511,6 +6511,8 @@ body.lock {
 }
 @media (max-width: 767.98px) {
   .title {
+    font-size: 24px;
+    line-height: 36px;
     margin-bottom: 40px;
   }
 }
@@ -6951,6 +6953,11 @@ body.lock {
   -o-object-fit: cover;
   object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  .services {
+    padding: 40px 0;
+  }
+}
 
 /* /services */
 /* team */
@@ -7030,6 +7037,34 @@ body.lock {
 }
 
 /* /team */
+/* benefit */
+.benefit .title {
+  max-width: 580px;
+}
+.benefit__item {
+  padding: 47px 0;
+  border-top: 1px solid #dee2e6;
+}
+.benefit__item:last-child {
+  border-bottom: 1px solid #dee2e6;
+}
+.benefit__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+}
+@media (max-width: 767.98px) {
+  .benefit__item {
+    padding: 20px 0;
+  }
+  .benefit__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 5px;
+  }
+}
+
+/* /benefit */
 /* footer */
 .footer {
   padding: 48px 0 96px;

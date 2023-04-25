@@ -51,5 +51,8 @@
       object-fit: cover;
     }
   }
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+  }
 }
 /* /services */

@@ -17,46 +17,107 @@
 				<div class="container">
 					<div class="header__container"><a class="header__logo" href="#"> <img src="img/logo-colors.svg" alt=""></a>
 						<nav class="header__nav" id="menuMobile">
-							<ul class="header__menu"> 
-								<li class="active"><a href="#">О проекте</a></li>
-								<li> <a href="#">программы</a></li>
-								<li> <a href="#">услуги</a></li>
-								<li> <a href="#">новости</a></li>
-								<li> <a href="#">Контакты</a></li>
-							</ul>
-							<div class="header__buttons d-block d-md-none"> 
-								<button class="btn btn--green-border">Войти</button>
-								<button class="btn btn--green">Стать резидентом</button>
+							<div class="header__userpanel d-flex d-md-none">
+								<div class="header__icon"> 
+									<svg class="icon-search">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</div>
+								<div class="header__icon"> 
+									<svg class="icon-user">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg>
+								</div>
+								<div class="header__close js-drop-close" data-drop="menuMobile"></div>
 							</div>
-							<div class="header__close js-drop-close" data-drop="menuMobile"></div>
+							<ul class="header__menu"> 
+								<li class="active"><a href="#">главная</a></li>
+								<li> <a href="#">наши услуги</a></li>
+								<li> <a href="#">наша команда</a></li>
+								<li> <a href="#">клиенты</a></li>
+								<li> <a href="#">новости</a></li>
+								<li> <a href="#">контакты</a></li>
+							</ul>
 						</nav>
-						<div class="header__buttons d-none d-md-block">
-							<button class="btn btn--green-border">Войти</button>
-							<button class="btn btn--green">Стать резидентом</button>
+						<div class="header__userpanel d-none d-md-flex">
+							<div class="header__icon"> 
+								<svg class="icon-search">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</div>
+							<div class="header__icon"> 
+								<svg class="icon-user">
+									<use xlink:href="img/sprite.svg#user"></use>
+								</svg>
+							</div><a class="header__tel" href="tel:+74957409807">+7 (495) 740-9807</a>
 						</div>
 						<button class="hamburger hamburger--squeeze js-drop-menu" data-drop="menuMobile"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
 					</div>
 				</div>
 			</header>
 			<!--	/header-->
-			<div class="content"> </div>
+			<div class="content"> 
+				<!-- welcome-->
+				<section class="welcome section">
+					<div class="container"> 
+						<div class="welcome__content"> 
+							<h1 class="welcome__title">Разработка цифровых сервисов в помощь вашему бизнесу</h1>
+							<p class="welcome__text">Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.</p>
+							<div class="welcome__btn"> 
+								<button class="btn btn--orange">обратится за консультацией</button>
+							</div>
+						</div>
+						<div class="welcome__img"> <img src="img/welcome.jpg" alt=""></div>
+					</div>
+				</section>
+				<!-- /welcome-->
+				<!-- statistics-->
+				<section class="statistics section">
+					<div class="container"> 
+						<div class="statistics__items">
+							<div class="row"> 
+								<div class="col-md-4"> 
+									<div class="statistics__item">
+										<div class="statistics__num">1,5 млн</div>
+										<div class="statistics__text">Человек уже использует систему Ritos в своей ежедневной работе</div>
+									</div>
+								</div>
+								<div class="col-md-4"> 
+									<div class="statistics__item">
+										<div class="statistics__num"> <span class="count-number" data-duration="3000" data-val-up="0" data-val-to="10">10 </span>&#160;лет</div>
+										<div class="statistics__text">Наша система успешно работает в МЛМ-индустрии</div>
+									</div>
+								</div>
+								<div class="col-md-4"> 
+									<div class="statistics__item">
+										<div class="statistics__num">~<span class="count-number" data-duration="4000" data-val-up="0" data-val-to="14">14 </span>&#160;дней</div>
+										<div class="statistics__text">Средний срок внедрения системы с вашим маркетинг-планом</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /statistics-->
+			</div>
 			<!-- footer-->
 			<footer class="footer">
 				<div class="container"> 
 					<div class="footer__top"> 
-						<div class="row justify-content-md-between">
+						<div class="row justify-content-md-between gy-1">
 							<div class="col-lg-4 col-md-auto"><a class="footer__logo" href="#"> <img src="img/logo-white.svg" alt=""></a></div>
 							<div class="col-lg-8 col-md-auto d-flex justify-content-between align-items-center">
 								<nav class="footer__nav"> 
 									<ul class="footer__menu"> 
-										<li class="active"><a href="#">О проекте</a></li>
-										<li> <a href="#">программы</a></li>
-										<li> <a href="#">услуги</a></li>
+										<li class="active"><a href="#">главная</a></li>
+										<li> <a href="#">наши услуги</a></li>
+										<li> <a href="#">наша команда</a></li>
+										<li> <a href="#">клиенты</a></li>
 										<li> <a href="#">новости</a></li>
-										<li> <a href="#">Контакты</a></li>
+										<li> <a href="#">контакты</a></li>
 									</ul>
 								</nav>
-								<div class="footer__social d-none d-xl-flex"><a href="#"> 
+								<div class="footer__social d-none d-xxl-flex"><a href="#"> 
 										<svg class="icon-fb">
 											<use xlink:href="img/sprite.svg#fb"></use>
 										</svg></a><a href="#"> 
@@ -75,8 +136,8 @@
 					<div class="footer__bottom"> 
 						<div class="row gy-1">
 							<div class="col-lg-4"> 
-								<div class="footer__text">2022 ЦСПО МЕЖРЕГИОНРЕСУРС</div>
-								<div class="footer__social d-flex d-xl-none"><a href="#"> 
+								<div class="footer__text">2022 RITOS</div>
+								<div class="footer__social d-flex d-xxl-none"><a href="#"> 
 										<svg class="icon-fb">
 											<use xlink:href="img/sprite.svg#fb"></use>
 										</svg></a><a href="#"> 

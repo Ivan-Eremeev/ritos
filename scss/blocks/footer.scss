@@ -5,10 +5,7 @@
   color: #fff;
 
   &__top {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    padding: 44px 0;
+    padding: 45px 0;
     border-top: 1px solid $border_color;
     border-bottom: 1px solid $border_color;
   }
@@ -16,36 +13,55 @@
   &__logo {
     display: block;
     flex-shrink: 0;
-    max-width: 135px;
+    max-width: 160px;
   }
 
   &__nav {}
 
   &__menu {
     display: flex;
-    margin-left: -20px;
+    margin-left: -24px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
 
     li {
-      margin-left: 20px;
+      margin-left: 24px;
 
       &.active {
         a {
           color: $secondary_color;
+          &:after {
+            width: 100%;
+          }
         }
       }
 
       a {
+        padding: 16px 0;
         color: #fff;
         white-space: nowrap;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background-color: $secondary_color;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transition: .3s;
+          transform: translate(-50%,0);
+        }
 
         @include media-breakpoint-up(md) {
           &:hover {
             color: $secondary_color;
+            &:after {
+              width: 100%;
+            }
           }
         }
       }
@@ -78,7 +94,7 @@
   }
 
   &__bottom {
-    padding: 33px 0;
+    padding: 33px 0 50px;
     border-bottom: 1px solid $border_color;
   }
 
@@ -123,12 +139,15 @@
     }
   }
 
-  @include media-breakpoint-down(xl) {
-    padding: 40px 0 70px;
-
+  @include media-breakpoint-down(xxl) {
     &__social {
       margin-top: 20px;
     }
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding: 40px 0 70px;
+
   }
 
   @include media-breakpoint-down(lg) {
@@ -152,6 +171,20 @@
   @include media-breakpoint-down(md) {
     padding: 30px 0 50px;
 
+    &__menu {
+      display: block;
+
+      li {
+        a {
+          display: block;
+          padding: 10px 0;
+          &:after {
+            width: 0 !important;
+          }
+        }
+      }
+    }
+
     &__top {
       padding: 30px 0;
     }
@@ -166,16 +199,6 @@
   }
 
   @include media-breakpoint-down(sm) {
-    &__menu {
-      display: block;
-
-      li {
-        a {
-          display: block;
-          padding: 10px 0;
-        }
-      }
-    }
 
     &__nav {
       width: 100%;

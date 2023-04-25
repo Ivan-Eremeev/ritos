@@ -5,24 +5,35 @@ header#headerSticky.header
       a(href="#").header__logo 
         img(src="img/logo-colors.svg", alt="")
       nav.header__nav#menuMobile
+        .header__userpanel.d-flex.d-md-none
+          .header__icon 
+            svg(class="icon-search")
+              use(xlink:href="img/sprite.svg#search")
+          .header__icon 
+            svg(class="icon-user")
+              use(xlink:href="img/sprite.svg#user")
+          .header__close.js-drop-close(data-drop="menuMobile")
         ul.header__menu 
           li.active
-            a(href="#") О проекте
+            a(href="#") главная
           li 
-            a(href="#") программы
+            a(href="#") наши услуги
           li 
-            a(href="#") услуги
+            a(href="#") наша команда
+          li 
+            a(href="#") клиенты
           li 
             a(href="#") новости
           li 
-            a(href="#") Контакты
-        .header__buttons.d-block.d-md-none 
-          button.btn.btn--green-border Войти
-          button.btn.btn--green Стать резидентом
-        .header__close.js-drop-close(data-drop="menuMobile")
-      .header__buttons.d-none.d-md-block
-        button.btn.btn--green-border Войти
-        button.btn.btn--green Стать резидентом
+            a(href="#") контакты
+      .header__userpanel.d-none.d-md-flex
+        .header__icon 
+          svg(class="icon-search")
+            use(xlink:href="img/sprite.svg#search")
+        .header__icon 
+          svg(class="icon-user")
+            use(xlink:href="img/sprite.svg#user")
+        a(href="tel:+74957409807").header__tel +7 (495) 740-9807
       button.hamburger.hamburger--squeeze.js-drop-menu(data-drop="menuMobile")
         span.hamburger-box
           span.hamburger-inner

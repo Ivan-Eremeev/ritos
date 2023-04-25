@@ -2,7 +2,7 @@
 footer.footer
   .container 
     .footer__top 
-      .row.justify-content-md-between
+      .row.justify-content-md-between.gy-1
         .col-lg-4.col-md-auto
           a.footer__logo(href="#") 
             img(src="img/logo-white.svg", alt="")
@@ -10,16 +10,18 @@ footer.footer
           nav.footer__nav 
             ul.footer__menu 
               li.active
-                a(href="#") О проекте
+                a(href="#") главная
               li 
-                a(href="#") программы
+                a(href="#") наши услуги
               li 
-                a(href="#") услуги
+                a(href="#") наша команда
+              li 
+                a(href="#") клиенты
               li 
                 a(href="#") новости
               li 
-                a(href="#") Контакты
-          .footer__social.d-none.d-xl-flex
+                a(href="#") контакты
+          .footer__social.d-none.d-xxl-flex
             a(href="#") 
               svg(class="icon-fb")
                 use(xlink:href="img/sprite.svg#fb")
@@ -35,8 +37,8 @@ footer.footer
     .footer__bottom 
       .row.gy-1
         .col-lg-4 
-          .footer__text 2022 ЦСПО МЕЖРЕГИОНРЕСУРС
-          .footer__social.d-flex.d-xl-none
+          .footer__text 2022 RITOS
+          .footer__social.d-flex.d-xxl-none
             a(href="#") 
               svg(class="icon-fb")
                 use(xlink:href="img/sprite.svg#fb")

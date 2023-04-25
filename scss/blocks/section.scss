@@ -1,0 +1,11 @@
+/* section */
+.section { 
+  margin-bottom: 120px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 80px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 60px;
+  }
+}
+/* /section */

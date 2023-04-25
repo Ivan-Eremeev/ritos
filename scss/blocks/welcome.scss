@@ -1,0 +1,42 @@
+/* welcome */
+.welcome { 
+  display: flex;
+  align-items: center;
+  min-height: 740px;
+  position: relative;
+  &__content {
+    padding: 80px 0;
+    width: calc(50% - 30px);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 24px;
+    color: $primary_color;
+  }
+  &__text {
+    max-width: 500px;
+    font-weight: 600;
+    margin-bottom: 56px;
+    color: $primary_color;
+  }
+  &__btn {
+    
+  }
+  &__img {
+    width: calc(50% - 30px);
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+/* /welcome */

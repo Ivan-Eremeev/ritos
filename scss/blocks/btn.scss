@@ -37,6 +37,16 @@
   //     }
   //   }
   // }
+  &--orange {
+    border-color: $secondary_color;
+    color: $secondary_color;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        background-color: $secondary_color;
+        color: #fff;
+      }
+    }
+  }
   &--white-border {
     border-color: #fff;
     color: #fff;

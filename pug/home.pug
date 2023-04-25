@@ -11,6 +11,39 @@ block content
 
     .content 
 
-      
+      // welcome
+      section.welcome.section
+        .container 
+          .welcome__content 
+            h1.welcome__title Разработка цифровых сервисов в помощь вашему бизнесу
+            p.welcome__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
+            .welcome__btn 
+              button.btn.btn--orange обратится за консультацией
+          .welcome__img 
+            img(src="img/welcome.jpg", alt="")
+      // /welcome
+
+      // statistics
+      section.statistics.section
+        .container 
+          .statistics__items
+            .row 
+              .col-md-4 
+                .statistics__item
+                  .statistics__num 1,5 млн
+                  .statistics__text Человек уже использует систему Ritos в своей ежедневной работе
+              .col-md-4 
+                .statistics__item
+                  .statistics__num 
+                    span.count-number(data-duration="3000" data-val-up="0" data-val-to="10") 10 
+                    | &#160;лет
+                  .statistics__text Наша система успешно работает в МЛМ-индустрии
+              .col-md-4 
+                .statistics__item
+                  .statistics__num ~
+                    span.count-number(data-duration="4000" data-val-up="0" data-val-to="14") 14 
+                    | &#160;дней
+                  .statistics__text Средний срок внедрения системы с вашим маркетинг-планом
+      // /statistics
 
     include core/footer.pug

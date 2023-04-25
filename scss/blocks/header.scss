@@ -30,7 +30,7 @@
 
   &__menu {
     display: flex;
-    margin-left: -32px;
+    margin-left: -20px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -38,7 +38,7 @@
     text-transform: uppercase;
 
     li {
-      margin-left: 32px;
+      margin-left: 20px;
 
       &.active {
         a {
@@ -84,13 +84,34 @@
     }
   }
 
-  &__buttons {
+  &__userpanel {
     display: flex;
-    margin-left: -16px;
-
-    .btn {
-      padding: 15px 24px;
-      margin-left: 16px;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 24px;
+    fill: $primary_color;
+    transition: 0.1s;
+    cursor: pointer;
+    user-select: none;
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+    @include media-breakpoint-up(md) {
+      &:hover {
+        fill: $secondary_color;
+      }
+    }
+  }
+  &__tel {
+    font-weight: bold;
+    color: $primary_color;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        color: $secondary_color;
+      }
     }
   }
 
@@ -102,7 +123,7 @@
     display: none;
   }
 
-  @include media-breakpoint-down(xl) {
+  @include media-breakpoint-down(xxl) {
     padding: 30px 0;
 
     &__container {
@@ -130,7 +151,8 @@
       flex-direction: column;
       width: 100%;
       max-width: 400px;
-      padding: 70px 40px 40px;
+      padding: 30px 40px 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,.2);
       position: fixed;
       top: 0;
       bottom: 0;
@@ -168,19 +190,14 @@
       }
     }
 
-    &__buttons {
-      display: block;
-      margin-left: 0;
-      margin-top: auto;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
+    &__userpanel {
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #fff;
+    }
 
-      .btn {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-      }
+    &__icon {
+      fill: #fff;
     }
 
     &__logo {
@@ -206,10 +223,8 @@
       display: block;
       width: 30px;
       height: 30px;
-      position: absolute;
-      top: 30px;
-      right: 30px;
-
+      position: relative;
+      margin-left: auto;
       &:after,
       &:before {
         content: '';

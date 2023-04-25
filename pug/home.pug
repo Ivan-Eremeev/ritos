@@ -63,7 +63,7 @@ block content
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 
-                    img(src="img/blob.svg", alt="")
+                    img(src="img/services-icons/blob.svg", alt="")
                   h3.services__title МЛМ-проекты
                   ul.services__list
                     li Личные кабинеты МЛМ-компании
@@ -74,7 +74,7 @@ block content
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 
-                    img(src="img/network.svg", alt="")
+                    img(src="img/services-icons/network.svg", alt="")
                   h3.services__title Разработка платформ
                   ul.services__list
                     li Инвестиционные платформы
@@ -83,7 +83,7 @@ block content
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 
-                    img(src="img/phones.svg", alt="")
+                    img(src="img/services-icons/phones.svg", alt="")
                   h3.services__title Разработка блокчейн-приложений
                   ul.services__list
                     li Запуск криптовалюты на популярных экосистемах
@@ -92,14 +92,47 @@ block content
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 
-                    img(src="img/phone.svg", alt="")
+                    img(src="img/services-icons/phone.svg", alt="")
                   h3.services__title Разработка мобильных приложений
                   ul.services__list
                     li Разработка приложений под IOS и Android
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__img 
-                    img(src="img/services.jpg", alt="")
+                    img(src="img/services-icons/services.jpg", alt="")
       // /services
+
+      // team
+      section.team.section
+        .container 
+          h2.title(data-aos="fade-up") Наша команда:
+          .team__slider 
+            #sliderTeam 
+              .swiper-wrapper 
+                .swiper-slide 
+                  mixin team-item(img, title, text)
+                    .team__item(data-aos="fade-up")
+                      .team__img 
+                        img(src= img, alt="")
+                      h3.team__title= title
+                      p.team__text= text
+                  +team-item('img/team/img1.jpg','Андрей Пивоваров','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img2.jpg','Сергей гаврилов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img3.jpg','Марк Семеницкий','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img4.jpg','Маргарита Смирнова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img5.jpg','Вероника Иванова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img6.jpg','Семен максимов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img7.jpg','семён митрофанов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img8.jpg','ирина семенова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img9.jpg','марк воскресенский','Ведущий аналитик, бизнес-консультант, ')
+      // /team
 
     include core/footer.pug

@@ -5,5 +5,8 @@
   line-height: 48px;
   color: $primary_color;
   margin-bottom: 60px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 40px;
+  }
 }
 /* /title */

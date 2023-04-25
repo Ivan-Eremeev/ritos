@@ -24,7 +24,7 @@ block content
       // /welcome
 
       // statistics
-      section.statistics.section
+      .statistics.section
         .container 
           .statistics__items
             .row 
@@ -45,5 +45,61 @@ block content
                     | &#160;дней
                   .statistics__text Средний срок внедрения системы с вашим маркетинг-планом
       // /statistics
+
+      // services
+      section.services.section
+        .container
+          h2.title Что мы предлагаем:
+          .services__items 
+            .row.gy-3
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/magnifier.svg", alt="")
+                  h3.services__title Консалтинг
+                  ul.services__list
+                    li Помощь в развертывании IT-проектов
+                    li Экспертная помощь в проектировании и разработке IT-систем
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/blob.svg", alt="")
+                  h3.services__title МЛМ-проекты
+                  ul.services__list
+                    li Личные кабинеты МЛМ-компании
+                    li Создание МЛМ сайтов
+                    li Мобильные приложения МЛМ-компаний
+                    li Разработка маркетинг-плана
+                    li Аудит маркетинг-плана
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/network.svg", alt="")
+                  h3.services__title Разработка платформ
+                  ul.services__list
+                    li Инвестиционные платформы
+                    li Образовательные платформы
+                    li Платежные системы
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/phones.svg", alt="")
+                  h3.services__title Разработка блокчейн-приложений
+                  ul.services__list
+                    li Запуск криптовалюты на популярных экосистемах
+                    li Создание криптовалюты с собственным блокчейном
+                    li Разработка децентрализованных приложений
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/phone.svg", alt="")
+                  h3.services__title Разработка мобильных приложений
+                  ul.services__list
+                    li Разработка приложений под IOS и Android
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__img 
+                    img(src="img/services.jpg", alt="")
+      // /services
 
     include core/footer.pug

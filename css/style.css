@@ -7065,6 +7065,126 @@ body.lock {
 }
 
 /* /benefit */
+/* banner */
+.banner {
+  padding: 170px 0 176px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.banner__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.banner__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.banner__content {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+.banner .title {
+  margin-bottom: 24px;
+  color: #fff;
+}
+.banner__sub {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.banner__text {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+/* /banner */
+/* clients */
+.clients {
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .clients__slider .swiper-wrapper {
+    width: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -60px;
+  }
+  .clients__slider .swiper-slide {
+    width: 33.33%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+  }
+}
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 172px;
+  background-color: #F2F2F2;
+  border-radius: 16px;
+}
+.clients__item img {
+  max-height: 100%;
+  -webkit-filter: saturate(0%) opacity(0.7);
+  filter: saturate(0%) opacity(0.7);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .clients__item:hover img {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+  }
+}
+@media (max-width: 1199.98px) {
+  .clients__slider .swiper-wrapper {
+    margin-left: -15px;
+    margin-left: -15px;
+    margin-top: -30px;
+  }
+  .clients__slider .swiper-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .clients__slider .swiper-wrapper {
+    margin-left: 0;
+    margin-left: 0;
+  }
+  .clients__slider .swiper-slide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* /clients */
 /* footer */
 .footer {
   padding: 48px 0 96px;

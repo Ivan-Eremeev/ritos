@@ -134,6 +134,41 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Слайдер "Клиенты"
+  if ($('#sliderClients').length) {
+    let sliderClients;
+    let init = false;
+    function sliderToggle() {
+      if ($(window).width() <= 768 && !init) {
+        init = true;
+        sliderClients = new Swiper('#sliderClients', {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+          speed: 1000,
+          pagination: false,
+          navigation: false,
+          breakpoints: {
+            769: {
+              slidesPerView: 2,
+              spaceBetween: 60,
+            },
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            }
+          }
+        });
+      } else if ($(window).width() > 768 && init) {
+        init = false;
+        sliderClients.destroy();
+      }
+    };
+    sliderToggle();
+    $(window).resize(function () {
+      sliderToggle();
+    });
+  }
+
   // // Swiper | Слайдер
   // if ($('#swiper').length) {
   //   const swiper = new Swiper('#swiper', {

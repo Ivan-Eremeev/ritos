@@ -55,7 +55,7 @@ block content
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 
-                    img(src="img/magnifier.svg", alt="")
+                    img(src="img/services-icons/magnifier.svg", alt="")
                   h3.services__title Консалтинг
                   ul.services__list
                     li Помощь в развертывании IT-проектов
@@ -136,7 +136,7 @@ block content
       // /team
 
       // benefit
-      section.benefit
+      section.benefit.section
         .container 
           h2.title(data-aos="fade-up") В чем основные преимущества нашей команды:
           .benefit__item(data-aos="fade-up")
@@ -182,5 +182,54 @@ block content
               .col-md-6 
                 p.benefit__text Платформа для финансовых взаиморасчетов между кооперативами
       // /benefit
+
+      // banner
+      section.banner.section
+        .container 
+          .banner__bg 
+            img(src="img/banner.jpg", alt="")
+          .banner__content 
+            h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
+            .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
+            .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
+            .banner__btn 
+              button.btn.btn--white-border обратится за консультацией
+      // /banner
+
+      // clients
+      section.clients.section
+        .container 
+          h2.title Наши клиенты:
+          .clients__slider 
+            #sliderClients
+              .swiper-wrapper
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img1.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img2.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img3.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img4.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img5.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img6.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img7.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img8.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img9.png", alt="")
+        // /clients
 
     include core/footer.pug

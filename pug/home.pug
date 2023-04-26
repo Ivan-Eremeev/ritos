@@ -272,4 +272,38 @@ block content
                     a(href="#").btn.btn--orange-border подробнее
       // /news
 
+      // contact
+      section.contact.section
+        .container 
+          form(action="#").contact__form 
+            h2.contact__title Есть проект? <br>Мы на связи
+            .contact__input 
+              input(type="text" name="name" placeholder="Ваше имя" required)
+            .contact__input 
+              input(type="text" name="email" placeholder="Ваш email" required)
+            .contact__select 
+              select(name="business" required) 
+                option(value="") Направление деятельности
+                option(value="#") Деятельность 1
+                option(value="#") Деятельность 2
+                option(value="#") Деятельность 3
+            .contact__btn 
+              button(type="submit").btn.btn--orange-border Отправить
+            .contact__annotation Нажимая на «Отправить» Вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на обработку Ваших персональных данных
+          .contact__img 
+              img(src="img/contact.jpg", alt="")
+      // /contact
+
+      // telegram
+      section.telegram
+        .container 
+          h2.telegram__title Мы в Telegram
+          .telegram__head 
+            a(href="#").telegram__subtitle Хотите узнать детали у нашего telegram-бота? Легко
+            a(href="#").telegram__arrow 
+              svg(class="icon-arrow-long")
+                use(xlink:href="img/sprite.svg#arrow-long")
+          .telegram__text Наш telegram-бот способен найти ответ на большое количество ваших вопросов и помочь определиться с выбором правильного решения.
+      // /telegram
+
     include core/footer.pug

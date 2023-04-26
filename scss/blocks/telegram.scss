@@ -27,6 +27,7 @@
     }
   }
   &__arrow {
+    flex-shrink: 0;
     fill: $primary_color;
     transition: 0.1s;
     svg {

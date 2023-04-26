@@ -7451,6 +7451,8 @@ body.lock {
   }
 }
 .telegram__arrow {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   fill: #0158F3;
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;

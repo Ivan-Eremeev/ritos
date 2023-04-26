@@ -18,7 +18,7 @@ block content
             h1.welcome__title Разработка цифровых сервисов в помощь вашему бизнесу
             p.welcome__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
             .welcome__btn 
-              button.btn.btn--orange обратится за консультацией
+              button.btn.btn--orange-border обратится за консультацией
           .welcome__img 
             img(src="img/welcome.jpg", alt="")
       // /welcome
@@ -231,5 +231,45 @@ block content
                   .clients__item 
                     img(src="img/clients/img9.png", alt="")
         // /clients
+
+        // news
+      section.news.section
+        .container 
+          .news__head 
+            h2.title(data-aos="fade-right") Новости:
+            a(href="#").news__more(data-aos="fade-left") Все новости
+          .news__items 
+            .row.gy-2
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img1.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Сублимированный анализ зарубежного опыта
+                  p.news__text Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. 
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img2.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Почему недостижимо привлечение аудитории?
+                  p.news__text Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img3.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Комплексный фирменный стиль — актуальная национальная задача
+                  p.news__text Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+      // /news
 
     include core/footer.pug

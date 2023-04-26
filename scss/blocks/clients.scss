@@ -36,7 +36,7 @@
     @include media-breakpoint-up(md) {
       &:hover {
         img {
-          filter: saturate(100%);
+          filter: saturate(100%) opacity(1);
         }
       }
     }
@@ -64,6 +64,13 @@
       .swiper-slide {
         padding-left: 0;
         padding-right: 0;
+      }
+      .swiper-slide-active {
+        .clients__item {
+          img {
+            filter: saturate(100%) opacity(1);
+          }
+        }
       }
     }
   }

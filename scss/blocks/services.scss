@@ -51,6 +51,9 @@
       object-fit: cover;
     }
   }
+  @include media-breakpoint-down(xl) {
+    padding: 60px 0;
+  }
   @include media-breakpoint-down(md) {
     padding: 40px 0;
   }

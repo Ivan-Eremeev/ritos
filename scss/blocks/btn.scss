@@ -37,7 +37,7 @@
   //     }
   //   }
   // }
-  &--orange {
+  &--orange-border {
     border-color: $secondary_color;
     color: $secondary_color;
     @include media-breakpoint-up(md) {

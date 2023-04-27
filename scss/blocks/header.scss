@@ -191,12 +191,14 @@
     }
 
     &__userpanel {
+      justify-content: space-between;
       padding-bottom: 20px;
       margin-bottom: 40px;
       border-bottom: 1px solid #fff;
     }
 
     &__icon {
+      margin-right: 0;
       fill: #fff;
     }
 
@@ -217,12 +219,13 @@
   @include media-breakpoint-down(sm) {
     &__nav {
       max-width: none;
+      padding: 30px 10px 40px;
     }
 
     &__close {
       display: block;
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       position: relative;
       margin-left: auto;
       &:after,
@@ -244,6 +247,9 @@
       &:before {
         transform: translate(-50%, -50%) rotate(-45deg);
       }
+    }
+    &__icon {
+      margin-right: 20px;
     }
   }
 }

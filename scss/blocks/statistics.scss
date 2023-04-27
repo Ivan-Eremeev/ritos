@@ -29,9 +29,13 @@
   }
 
   @include media-breakpoint-down(md) {
+    &__items {
+      border-top: 1px solid $primary_color;
+    }
     &__item {
       padding: 25px 0;
       text-align: center;
+      border-top: none;
     }
 
     &__text {

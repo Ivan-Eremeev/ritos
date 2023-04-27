@@ -59,6 +59,15 @@
       }
     }
   }
+  @include media-breakpoint-down(lg) {
+    &__img {
+      height: 200px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
   @include media-breakpoint-down(md) {
     &__slider {
       .swiper-wrapper {
@@ -74,8 +83,6 @@
       margin-bottom: 25px;
     }
     &__title {
-      font-size: 16px;
-      line-height: 24px;
       margin-bottom: 10px;
     }
   }

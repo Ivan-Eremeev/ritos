@@ -55,7 +55,25 @@
     padding: 60px 0;
   }
   @include media-breakpoint-down(md) {
-    padding: 40px 0;
+    padding: 60px 0;
+    &__icon {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    &__list {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &__img {
+      margin-top: 20px;
+    }
   }
 }
 /* /services */

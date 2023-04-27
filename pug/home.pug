@@ -17,10 +17,12 @@ block content
           .welcome__content 
             h1.welcome__title Разработка цифровых сервисов в помощь вашему бизнесу
             p.welcome__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
-            .welcome__btn 
+            .welcome__btn.d-none.d-md-block
               button.btn.btn--orange-border обратится за консультацией
           .welcome__img 
             img(src="img/welcome.jpg", alt="")
+          .welcome__btn.d-block.d-md-none
+              button.btn.btn--orange-border обратится за консультацией
       // /welcome
 
       // statistics
@@ -51,7 +53,7 @@ block content
         .container
           h2.title Что мы предлагаем:
           .services__items 
-            .row.gy-3
+            .row.gy-1.gy-md-3
               .col-lg-4.col-md-6 
                 .services__item 
                   .services__icon 

@@ -45,5 +45,12 @@
   }
   &__btn {
   }
+  @include media-breakpoint-down(md) {
+    padding: 60px 0;
+    &__sub {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
 }
 /* /banner */

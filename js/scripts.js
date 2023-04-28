@@ -169,6 +169,11 @@ window.onload = function () {
     });
   }
 
+  // Select2 || Стилизация селекта
+  $('select').select2({
+    minimumResultsForSearch: -1,
+  });
+
   // // Swiper | Слайдер
   // if ($('#swiper').length) {
   //   const swiper = new Swiper('#swiper', {

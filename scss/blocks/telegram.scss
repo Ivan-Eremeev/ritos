@@ -30,6 +30,7 @@
     flex-shrink: 0;
     fill: $primary_color;
     transition: 0.1s;
+    margin-left: 20px;
     svg {
       width: 60px;
       height: 9px;
@@ -45,11 +46,37 @@
     font-size: 12px;
     line-height: 22px;
   }
+  @include media-breakpoint-down(xxl) {
+    &__title {
+      font-size: 44px;
+      line-height: 52px;
+    }
+  }
   @include media-breakpoint-down(xl) {
     padding: 60px 0;
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__title {
+      font-size: 26px;
+      line-height: 34px;
+    }
   }
   @include media-breakpoint-down(md) {
     padding: 40px 0;
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__arrow {
+      svg {
+        width: 40px;
+      }
+    }
   }
 }
 /* /telegram */

@@ -1,0 +1,310 @@
+extends core/base.pug
+
+block title 
+  title Главная (версия 2)
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // welcome2
+      section.welcome2.section
+        .container 
+          h1.welcome2__title Разработка цифровых сервисов в помощь вашему бизнесу
+          p.welcome2__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
+          .welcome2__btn
+            button.btn.btn--orange-border обратится за консультацией
+      // /welcome2
+
+      // statistics2
+      .statistics2.section
+        .container 
+          .statistics2__items
+            .row.gy-1.gy-xl-3.justify-content-center
+              .col-lg-4.col-md-6
+                .statistics2__item
+                  .statistics2__num 1,5&#160;млн
+                  .statistics2__text Человек уже использует систему Ritos в своей ежедневной работе
+              .col-lg-4.col-md-6
+                .statistics2__item
+                  .statistics2__num 
+                    span.count-number(data-duration="3000" data-val-up="0" data-val-to="10") 10 
+                    | &#160;лет
+                  .statistics2__text Наша система успешно работает в МЛМ-индустрии
+              .col-lg-4.col-md-6
+                .statistics2__item
+                  .statistics2__num ~
+                    span.count-number(data-duration="4000" data-val-up="0" data-val-to="14") 14 
+                    | &#160;дней
+                  .statistics2__text Средний срок внедрения системы с вашим маркетинг-планом
+      // /statistics2
+
+      // services
+      section.services.section
+        .container
+          h2.title Что мы предлагаем:
+          .services__items 
+            .row.gy-1.gy-md-3
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/services-icons/magnifier.svg", alt="")
+                  h3.services__title Консалтинг
+                  ul.services__list
+                    li Помощь в развертывании IT-проектов
+                    li Экспертная помощь в проектировании и разработке IT-систем
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/services-icons/blob.svg", alt="")
+                  h3.services__title МЛМ-проекты
+                  ul.services__list
+                    li Личные кабинеты МЛМ-компании
+                    li Создание МЛМ сайтов
+                    li Мобильные приложения МЛМ-компаний
+                    li Разработка маркетинг-плана
+                    li Аудит маркетинг-плана
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/services-icons/network.svg", alt="")
+                  h3.services__title Разработка платформ
+                  ul.services__list
+                    li Инвестиционные платформы
+                    li Образовательные платформы
+                    li Платежные системы
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/services-icons/phones.svg", alt="")
+                  h3.services__title Разработка блокчейн-приложений
+                  ul.services__list
+                    li Запуск криптовалюты на популярных экосистемах
+                    li Создание криптовалюты с собственным блокчейном
+                    li Разработка децентрализованных приложений
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__icon 
+                    img(src="img/services-icons/phone.svg", alt="")
+                  h3.services__title Разработка мобильных приложений
+                  ul.services__list
+                    li Разработка приложений под IOS и Android
+              .col-lg-4.col-md-6 
+                .services__item 
+                  .services__img 
+                    img(src="img/services-icons/services.jpg", alt="")
+      // /services
+
+      // team
+      section.team.section
+        .container 
+          h2.title(data-aos="fade-up") Наша команда:
+          .team__slider 
+            #sliderTeam 
+              .swiper-wrapper 
+                .swiper-slide 
+                  mixin team-item(img, title, text)
+                    .team__item(data-aos="fade-up")
+                      .team__img 
+                        img(src= img, alt="")
+                      h3.team__title= title
+                      p.team__text= text
+                  +team-item('img/team/img1.jpg','Андрей Пивоваров','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img2.jpg','Сергей гаврилов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img3.jpg','Марк Семеницкий','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img4.jpg','Маргарита Смирнова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img5.jpg','Вероника Иванова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img6.jpg','Семен максимов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img7.jpg','семён митрофанов','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img8.jpg','ирина семенова','Ведущий аналитик, бизнес-консультант, ')
+                .swiper-slide 
+                  +team-item('img/team/img9.jpg','марк воскресенский','Ведущий аналитик, бизнес-консультант, ')
+      // /team
+
+      // benefit
+      section.benefit.section
+        .container 
+          h2.title(data-aos="fade-up") В чем основные преимущества нашей команды:
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Автоматизация
+              .col-md-6 
+                p.benefit__text Современный тренд – автоматизация отлаженных бизнес- процессов
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Экспертность
+              .col-md-6 
+                p.benefit__text Благодаря автоматизации массовый доступ к лучшим экспертам. Нет нужды иметь большой штат делопроизводителей. Экспертная помощь Центрального Союза Потребительских Обществ в решении различных вопросов
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Популяризация
+              .col-md-6 
+                p.benefit__text Наша задача – популяризация кооперация
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Сервис ЭЦП
+              .col-md-6 
+                p.benefit__text Для соблюдения всех правовых норм РФ
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Документооборот
+              .col-md-6 
+                p.benefit__text Решает задачу подписания и хранения документов. Больше не нужно хранить тонны бумажных архивов
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Бухгалтерия
+              .col-md-6 
+                p.benefit__text Автоматизированное создание проводок по типовым кооперативным операциям
+          .benefit__item(data-aos="fade-up")
+            .row 
+              .col-md-6 
+                h3.benefit__title Взаиморасчеты
+              .col-md-6 
+                p.benefit__text Платформа для финансовых взаиморасчетов между кооперативами
+      // /benefit
+
+      // banner
+      section.banner.section
+        .container 
+          .banner__bg 
+            img(src="img/banner.jpg", alt="")
+          .banner__content 
+            h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
+            .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
+            .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
+            .banner__btn 
+              button.btn.btn--white-border обратится за консультацией
+      // /banner
+
+      // clients
+      section.clients.section
+        .container 
+          h2.title Наши клиенты:
+          .clients__slider 
+            #sliderClients
+              .swiper-wrapper
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img1.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img2.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img3.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img4.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img5.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img6.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img7.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img8.png", alt="")
+                .swiper-slide 
+                  .clients__item 
+                    img(src="img/clients/img9.png", alt="")
+        // /clients
+
+        // news
+      section.news.section
+        .container 
+          .news__head 
+            h2.title(data-aos="fade-right") Новости:
+            a(href="#").news__more(data-aos="fade-left") Все новости
+          .news__items 
+            .row.gy-2
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img1.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Сублимированный анализ зарубежного опыта
+                  p.news__text Рекламный блок, суммируя приведенные примеры, недостаточно специфицирует фирменный фирменный стиль. 
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img2.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Почему недостижимо привлечение аудитории?
+                  p.news__text Потребление стабилизирует conversion rate. Дело в том, что имидж пока плохо обуславливает популярный нестандартный подход.
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+              .col-sm-6.col-lg-4
+                .news__item(data-aos="fade-up")
+                  a(href="#").news__img 
+                    img(src="img/news/img3.jpg", alt="")
+                  .news__date 01 декабря 2022 года
+                  h3.news__subtitle 
+                    a(href="#") Комплексный фирменный стиль — актуальная национальная задача
+                  p.news__text Взаимодействие корпорации и клиента отталкивает побочный PR-эффект.
+                  .news__btn 
+                    a(href="#").btn.btn--orange-border подробнее
+      // /news
+
+      // contact
+      section.contact.section
+        .container 
+          form(action="#").contact__form 
+            h2.contact__title Есть проект? <br>Мы на связи
+            .contact__input 
+              input(type="text" name="name" placeholder="Ваше имя" required)
+            .contact__input 
+              input(type="text" name="email" placeholder="Ваш email" required)
+            .contact__select 
+              select(name="business" required) 
+                option(value="" disabled selected hidden) Направление деятельности
+                option(value="#") Деятельность 1
+                option(value="#") Деятельность 2
+                option(value="#") Деятельность 3
+                option(value="#") Деятельность 4
+                option(value="#") Деятельность 5
+                option(value="#") Деятельность 6
+                option(value="#") Деятельность 7
+            .contact__btn 
+              button(type="submit").btn.btn--orange-border Отправить
+            .contact__annotation Нажимая на «Отправить» Вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на обработку Ваших персональных данных
+          .contact__img 
+              img(src="img/contact.jpg", alt="")
+      // /contact
+
+      // telegram
+      section.telegram
+        .container 
+          h2.telegram__title Мы в Telegram
+          .telegram__head 
+            a(href="#").telegram__subtitle Хотите узнать детали у нашего telegram-бота? Легко
+            a(href="#").telegram__arrow 
+              svg(class="icon-arrow-long")
+                use(xlink:href="img/sprite.svg#arrow-long")
+          .telegram__text Наш telegram-бот способен найти ответ на большое количество ваших вопросов и помочь определиться с выбором правильного решения.
+      // /telegram
+
+    include core/footer.pug

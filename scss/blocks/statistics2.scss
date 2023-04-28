@@ -1,0 +1,56 @@
+/* statistics */
+.statistics2 {
+  &__items {}
+
+  &__item {
+    height: 100%;
+    padding: 24px;
+    background-color: #FDF5ED;
+    border-radius: 16px;
+  }
+
+  &__num {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    color: $secondary_color;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    &__num {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__item {
+      text-align: center;
+      border-top: none;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__list {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__num {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* /statistics */

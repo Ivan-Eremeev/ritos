@@ -12,7 +12,7 @@ block content
     .content 
 
       // welcome2
-      section.welcome2.section
+      section.welcome2
         .container 
           h1.welcome2__title Разработка цифровых сервисов в помощь вашему бизнесу
           p.welcome2__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
@@ -21,7 +21,7 @@ block content
       // /welcome2
 
       // statistics2
-      .statistics2.section
+      .statistics2
         .container 
           .statistics2__items
             .row.gy-1.gy-xl-3.justify-content-center
@@ -43,61 +43,97 @@ block content
                   .statistics2__text Средний срок внедрения системы с вашим маркетинг-планом
       // /statistics2
 
-      // services
-      section.services.section
+      // clients2
+      section.clients2.section
+        .clients2__slider 
+          #sliderClients2
+            .swiper-wrapper
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img1.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img2.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img3.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img4.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img5.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img6.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img7.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img8.png", alt="")
+              .swiper-slide 
+                .clients2__item 
+                  img(src="img/clients/img9.png", alt="")
+      // /clients2
+
+      // services2
+      section.services2.section
         .container
           h2.title Что мы предлагаем:
-          .services__items 
+          .services2__items 
             .row.gy-1.gy-md-3
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__icon 
-                    img(src="img/services-icons/magnifier.svg", alt="")
-                  h3.services__title Консалтинг
-                  ul.services__list
+              .col-md-6 
+                .services2__item 
+                  .services2__img 
+                    img(src="img/services-images/img1.png", alt="")
+                  h3.services2__title Консалтинг
+                  ul.services2__list
                     li Помощь в развертывании IT-проектов
                     li Экспертная помощь в проектировании и разработке IT-систем
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__icon 
-                    img(src="img/services-icons/blob.svg", alt="")
-                  h3.services__title МЛМ-проекты
-                  ul.services__list
+              .col-md-6 
+                .services2__item 
+                  .services2__img 
+                    img(src="img/services-images/img2.png", alt="")
+                  h3.services2__title МЛМ-проекты
+                  ul.services2__list
                     li Личные кабинеты МЛМ-компании
                     li Создание МЛМ сайтов
                     li Мобильные приложения МЛМ-компаний
                     li Разработка маркетинг-плана
                     li Аудит маркетинг-плана
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__icon 
-                    img(src="img/services-icons/network.svg", alt="")
-                  h3.services__title Разработка платформ
-                  ul.services__list
+              .col-md-6 
+                .services2__item 
+                  .services2__img 
+                    img(src="img/services-images/img3.png", alt="")
+                  h3.services2__title Разработка платформ
+                  ul.services2__list
                     li Инвестиционные платформы
                     li Образовательные платформы
                     li Платежные системы
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__icon 
-                    img(src="img/services-icons/phones.svg", alt="")
-                  h3.services__title Разработка блокчейн-приложений
-                  ul.services__list
+              .col-md-6 
+                .services2__item 
+                  .services2__img 
+                    img(src="img/services-images/img4.png", alt="")
+                  h3.services2__title Разработка блокчейн-приложений
+                  ul.services2__list
                     li Запуск криптовалюты на популярных экосистемах
                     li Создание криптовалюты с собственным блокчейном
                     li Разработка децентрализованных приложений
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__icon 
-                    img(src="img/services-icons/phone.svg", alt="")
-                  h3.services__title Разработка мобильных приложений
-                  ul.services__list
+              .col-md-6 
+                .services2__item 
+                  .services2__img 
+                    img(src="img/services-images/img5.png", alt="")
+                  h3.services2__title Разработка мобильных приложений
+                  ul.services2__list
                     li Разработка приложений под IOS и Android
-              .col-lg-4.col-md-6 
-                .services__item 
-                  .services__img 
-                    img(src="img/services-icons/services.jpg", alt="")
-      // /services
+              .col-md-6 
+                .services2__item.services2__item--blue
+                  h3.services2__title Есть идея для проекта? Давайте обсудим!
+                  p.services2__text Мы готовы помочь вам выработать оптимальный маркетинг-план и пути развития вашего продукта, уже сегодня!
+                  .services2__btn 
+                    .btn.btn--white-border мы на связи!
+      // /services2
 
       // team
       section.team.section
@@ -193,43 +229,7 @@ block content
               button.btn.btn--white-border обратится за консультацией
       // /banner
 
-      // clients
-      section.clients.section
-        .container 
-          h2.title Наши клиенты:
-          .clients__slider 
-            #sliderClients
-              .swiper-wrapper
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img1.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img2.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img3.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img4.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img5.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img6.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img7.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img8.png", alt="")
-                .swiper-slide 
-                  .clients__item 
-                    img(src="img/clients/img9.png", alt="")
-        // /clients
-
-        // news
+      // news
       section.news.section
         .container 
           .news__head 

@@ -169,6 +169,30 @@ window.onload = function () {
     });
   }
 
+  // Swiper | Клиенты 2
+  if ($('#sliderClients2').length) {
+    const sliderClients2 = new Swiper('#sliderClients2', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 1,
+      },
+      speed: 3000,
+      freeMode: true,
+      breakpoints: {
+        769: {
+          spaceBetween: 60,
+        },
+        576: {
+          spaceBetween: 30,
+        }
+      }
+    });
+  }
+
   // Select2 || Стилизация селекта
   $('select').select2({
     minimumResultsForSearch: -1,

@@ -1,0 +1,121 @@
+/* services2 */
+.services2 { 
+  padding: 80px 0;
+  background-color: #F9F9F9;
+  .title {
+    
+  }
+  &__items {
+    
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 390px;
+    padding: 24px;
+    background: #E3ECFE;
+    border-radius: 16px;
+    position: relative;
+    &--blue {
+      background-color: $primary_color;
+      color: #fff;
+      .services2__title {
+        max-width: none;
+      }
+    }
+  }
+  &__img {
+    width: 40%;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 123%;
+    }
+    img {
+      max-height: 100%;
+      margin-left: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &__title {
+    max-width: 330px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  &__list {
+    max-width: 330px;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    li {
+      padding-left: 30px;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: $text_color;
+        position: absolute;
+        top: 12px;
+        left: 0;
+      }
+    }
+  }
+  &__text {
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+      border-width: 2px;
+      border-radius: 8px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 60px 0;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 60px 0;
+    &__item {
+      min-height: 300px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    &__list {
+      font-size: 14px;
+      line-height: 22px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      min-height: 270px;
+    }
+    &__img {
+      width: 30%;
+    }
+  }
+}
+/* /services2 */

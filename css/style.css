@@ -7702,7 +7702,7 @@ body.lock {
 }
 
 /* /telegram */
-/* welcome */
+/* welcome2 */
 .welcome2 {
   text-align: center;
   padding-top: 120px;
@@ -7753,8 +7753,11 @@ body.lock {
   }
 }
 
-/* /welcome */
-/* statistics */
+/* /welcome2 */
+/* statistics2 */
+.statistics2 {
+  margin-bottom: 84px;
+}
 .statistics2__item {
   height: 100%;
   padding: 24px;
@@ -7798,7 +7801,183 @@ body.lock {
   }
 }
 
-/* /statistics */
+/* /statistics2 */
+/* clients2 */
+.clients2 {
+  overflow: hidden;
+}
+.clients2__slider {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.clients2__slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+.clients2__slider .swiper-slide {
+  width: auto;
+}
+.clients2__slider .swiper-slide-active .clients2__item img {
+  -webkit-filter: saturate(100%) opacity(1);
+  filter: saturate(100%) opacity(1);
+}
+.clients2__slider .swiper-slide-prev .clients2__item img {
+  -webkit-filter: saturate(100%) opacity(1);
+  filter: saturate(100%) opacity(1);
+}
+.clients2__slider .swiper-slide-next .clients2__item img {
+  -webkit-filter: saturate(100%) opacity(1);
+  filter: saturate(100%) opacity(1);
+}
+.clients2__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  height: 78px;
+  border-radius: 16px;
+  border: 1px solid #0158F3;
+  overflow: hidden;
+}
+.clients2__item img {
+  max-height: 100%;
+  -webkit-filter: saturate(0%) opacity(0.7);
+  filter: saturate(0%) opacity(0.7);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+/* /clients2 */
+/* services2 */
+.services2 {
+  padding: 80px 0;
+  background-color: #F9F9F9;
+}
+.services2__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 390px;
+  padding: 24px;
+  background: #E3ECFE;
+  border-radius: 16px;
+  position: relative;
+}
+.services2__item--blue {
+  background-color: #0158F3;
+  color: #fff;
+}
+.services2__item--blue .services2__title {
+  max-width: none;
+}
+.services2__img {
+  width: 40%;
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+.services2__img:after {
+  content: "";
+  display: block;
+  padding-top: 123%;
+}
+.services2__img img {
+  max-height: 100%;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.services2__title {
+  max-width: 330px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+.services2__list {
+  max-width: 330px;
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
+}
+.services2__list li {
+  padding-left: 30px;
+  position: relative;
+}
+.services2__list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.services2__list li:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #252424;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.services2__text {
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+.services2__btn .btn {
+  width: 100%;
+  border-width: 2px;
+  border-radius: 8px;
+}
+@media (max-width: 1199.98px) {
+  .services2 {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .services2 {
+    padding: 60px 0;
+  }
+  .services2__item {
+    min-height: 300px;
+  }
+  .services2__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .services2__list {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .services2__list li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 575.98px) {
+  .services2__item {
+    min-height: 270px;
+  }
+  .services2__img {
+    width: 30%;
+  }
+}
+
+/* /services2 */
 /* footer */
 .footer {
   padding: 48px 0 96px;

@@ -136,7 +136,7 @@ block content
       // /services2
 
       // team
-      section.team.section
+      section.team.team--v2.section
         .container 
           h2.title(data-aos="fade-up") Наша команда:
           .team__slider 
@@ -145,7 +145,7 @@ block content
                 .swiper-slide 
                   mixin team-item(img, title, text)
                     .team__item(data-aos="fade-up")
-                      .team__img 
+                      .team__img
                         img(src= img, alt="")
                       h3.team__title= title
                       p.team__text= text
@@ -217,20 +217,21 @@ block content
       // /benefit
 
       // banner
-      section.banner.section
+      section.banner.banner--v2.section
         .container 
-          .banner__bg 
-            img(src="img/banner.jpg", alt="")
-          .banner__content 
-            h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
-            .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
-            .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
-            .banner__btn 
-              button.btn.btn--white-border обратится за консультацией
+          .banner__container 
+            .banner__bg 
+              img(src="img/banner.jpg", alt="")
+            .banner__content 
+              h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
+              .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
+              .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
+              .banner__btn 
+                button.btn.btn--white-border обратится за консультацией
       // /banner
 
       // news
-      section.news.section
+      section.news.news--v2.section
         .container 
           .news__head 
             h2.title(data-aos="fade-right") Новости:
@@ -270,7 +271,7 @@ block content
       // /news
 
       // contact
-      section.contact.section
+      section.contact.contact--v2.section
         .container 
           form(action="#").contact__form 
             h2.contact__title Есть проект? <br>Мы на связи

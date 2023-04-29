@@ -69,6 +69,20 @@
       object-fit: cover;
     }
   }
+  &--v2 {
+    .container {
+      display: flex;
+    }
+    .contact__form {
+      padding: 0;
+    }
+    .contact__img {
+      width: calc(50% - 30px);
+      position: static;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
   @include media-breakpoint-down(xxl) {
     &__title {
       font-size: 44px;

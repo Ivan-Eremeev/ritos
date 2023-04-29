@@ -7141,6 +7141,16 @@ body.lock {
   font-size: 14px;
   line-height: 22px;
 }
+.team--v2 .container:after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 60px;
+  background-color: #0158F3;
+}
+.team--v2 .team__img {
+  margin-bottom: 24px;
+}
 @media (max-width: 1199.98px) {
   .team__img {
     height: 290px;
@@ -7177,6 +7187,9 @@ body.lock {
   }
   .team__title {
     margin-bottom: 10px;
+  }
+  .team--v2 .container:after {
+    margin-top: 40px;
   }
 }
 
@@ -7256,6 +7269,18 @@ body.lock {
   font-weight: 600;
   margin-bottom: 48px;
 }
+.banner--v2 {
+  padding: 0;
+  position: static;
+}
+.banner--v2 .banner__container {
+  padding: 112px 30px 117px;
+  position: relative;
+}
+.banner--v2 .banner__bg {
+  border-radius: 16px;
+  overflow: hidden;
+}
 @media (max-width: 767.98px) {
   .banner {
     padding: 60px 0;
@@ -7263,6 +7288,12 @@ body.lock {
   .banner__sub {
     font-size: 18px;
     line-height: 26px;
+  }
+  .banner--v2 {
+    padding: 0;
+  }
+  .banner--v2 .banner__container {
+    padding: 60px 20px;
   }
 }
 
@@ -7438,6 +7469,10 @@ body.lock {
 .news__btn {
   margin-top: auto;
 }
+.news--v2 .news__img {
+  border-radius: 16px;
+  overflow: hidden;
+}
 @media (max-width: 1199.98px) {
   .news {
     padding: 60px 0;
@@ -7572,6 +7607,20 @@ body.lock {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.contact--v2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact--v2 .contact__form {
+  padding: 0;
+}
+.contact--v2 .contact__img {
+  width: calc(50% - 30px);
+  position: static;
+  border-radius: 16px;
+  overflow: hidden;
 }
 @media (max-width: 1299.98px) {
   .contact__title {

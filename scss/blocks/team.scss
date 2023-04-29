@@ -44,6 +44,20 @@
     font-size: 14px;
     line-height: 22px;
   }
+  &--v2 {
+    .container {
+      &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        margin-top: 60px;
+        background-color: $primary_color;
+      }
+    }
+    .team__img {
+      margin-bottom: 24px;
+    }
+  }
   @include media-breakpoint-down(xl) {
     &__img {
       height: 290px;
@@ -84,6 +98,13 @@
     }
     &__title {
       margin-bottom: 10px;
+    }
+    &--v2 {
+      .container {
+        &:after {
+          margin-top: 40px;
+        }
+      }
     }
   }
 }

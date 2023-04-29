@@ -45,11 +45,29 @@
   }
   &__btn {
   }
+  &--v2 {
+    padding: 0;
+    position: static;
+    .banner__container {
+      padding: 112px 30px 117px;
+      position: relative;
+    }
+    .banner__bg {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
   @include media-breakpoint-down(md) {
     padding: 60px 0;
     &__sub {
       font-size: 18px;
       line-height: 26px;
+    }
+    &--v2 {
+      padding: 0;
+      .banner__container {
+        padding: 60px 20px;
+      }
     }
   }
 }

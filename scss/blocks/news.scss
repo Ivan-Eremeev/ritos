@@ -72,6 +72,12 @@
   &__btn {
     margin-top: auto;
   }
+  &--v2 {
+    .news__img {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
   @include media-breakpoint-down(xl) {
     padding: 60px 0;
     &__title {

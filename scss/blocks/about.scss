@@ -1,0 +1,123 @@
+/* about */
+.about { 
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: $primary_color;
+    margin-bottom: 60px;
+  }
+  &__content {
+    padding: 80px 0;
+    background-color: #F9F9F9;
+    border-radius: 32px;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    img {
+      display: block;
+    }
+  }
+  &__textblock {
+    margin-bottom: 60px;
+    column-width: 48%;
+    column-count: 2;
+    column-gap: 4%;
+    p {
+      margin: 16px 0;
+    }
+    b {
+      font-weight: bold;
+    }
+    ul {
+      li {
+        margin: 16px 0;
+        padding-left: 30px;
+        position: relative;
+        &:before {
+          content: '';
+          display: block;
+          width: 15px;
+          height: 1px;
+          background-color: $text_color;
+          position: absolute;
+          top: 10px;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__banner {
+    padding: 32px 24px;
+    background-color: $primary_color;
+    border-radius: 16px;
+    color: #fff;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+  &__text {
+    
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    &__title {
+      font-size: 44px;
+      line-height: 52px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__title {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__content {
+      padding: 60px 0;
+    }
+    &__img {
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    &__textblock {
+      margin-bottom: 40px;
+      column-width: 100%;
+      column-count: 1;
+      column-gap: 0%;
+      p {
+        margin: 8px 0;
+      }
+      ul {
+        li {
+          margin: 8px 0;
+        }
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 28px;
+    }
+  }
+}
+/* /about */

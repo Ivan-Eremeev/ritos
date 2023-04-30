@@ -1,0 +1,40 @@
+/* breadcrumbs */
+.breadcrumbs { 
+  margin-bottom: 24px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    li {
+      &:not(:last-child) {
+        margin-right: 12px;
+        padding-right: 12px;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 7px;
+          height: 6px;
+          background-image: url("data:image/svg+xml,%3Csvg width='7' height='6' viewBox='0 0 7 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.70759 5.96405H0.475586L2.44959 3.29005L0.475586 0.602051H1.70759L3.72359 3.29005L1.70759 5.96405ZM4.39559 5.96405H3.16359L5.13759 3.29005L3.16359 0.602051H4.39559L6.41159 3.29005L4.39559 5.96405Z' fill='%230158F3'/%3E%3C/svg%3E%0A");
+          position: absolute;
+          top: 8px;
+          right: -4px;
+        }
+      }
+      a {
+        color: $primary_color;
+        @include media-breakpoint-up(md) {
+          &:hover {
+            color: $secondary_color;
+          }
+        }
+      }
+      span {
+        color: #B0B0B0;
+      }
+    }
+  }
+}
+/* /breadcrumbs */

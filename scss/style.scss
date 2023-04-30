@@ -8,7 +8,7 @@ $grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 769px,
   lg: 992px,
   xl: 1200px,
   xxl: 1300px
@@ -182,5 +182,7 @@ $secondary_color: #F37F06;
 @import 'blocks/statistics2';
 @import 'blocks/clients2';
 @import 'blocks/services2';
+@import 'blocks/breadcrumbs';
+@import 'blocks/about';
 
 @import 'blocks/footer';

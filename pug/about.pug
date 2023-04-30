@@ -1,0 +1,106 @@
+extends core/base.pug
+
+block title 
+  title О компании
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span О компании
+      // /breadcrumbs
+
+      // about
+      .about.section
+        .container 
+          h1.about__title О компании
+        .about__content 
+          .container
+            .about__img 
+              img(src="img/about.jpg", alt="")
+            .about__textblock 
+              p 
+                b Начинали мы с того, что как обычная IT-компания выполняли любые заказные проекты, включая:
+              ul 
+                li интеграцию систем документооборота, бухгалтерии
+                li разработка Интернет-сайтов и порталов
+                li разработка заказных проектов для рекламных терминалов
+                li решали абсолютно любые другие IT-задачи
+              p В 2008-м году мы познакомились с шумной в то время компанией Интвэй, для которой разработали систему Интернет-конференций, а затем ряд других продуктов. С этого началось наше знакомство с МЛМ-индустрией. Через некоторое время у нас появился свой продукт - первые личные кабинеты для МЛМ-компаний. Идеологию продукта мы выстраивали от самого важного компонента всей системы - платежного функционала. То есть была поставлена задача изначально сделать платежную систему, которая дополняется различным дополнительным функционалом.
+              p Во время работы с клиентами мы творчески пропускаем через себя их запросы и нужды и делаем новые функциональные модули, решающие те или иные бизнес-задачи.
+              p В настоящее время реализованный функционал позволяет в кратчайшие запустить практически любую МЛМ-компанию, а также использовать нашу платформы для создания личных кабинетов пользователей в любых сферах, где требуются такие кабинеты - системы ЖКХ, хостинг-системы, платежные сервисы, образовательные системы и прочее.
+              p Во время работы с клиентами мы творчески пропускаем через себя их запросы и нужды и делаем новые функциональные модули, решающие те или иные бизнес-задачи.
+            .about__banner 
+              .about__subtitle Есть идея для проекта? Давайте обсудим!
+              .row.gy-1
+                .col-md-6 
+                  .about__text Мы готовы помочь вам выработать оптимальный маркетинг-план и пути развития вашего продукта, уже сегодня!
+                .col-md-6 
+                  .about__btn 
+                    .btn.btn--white-border мы на связи!
+      // /about
+
+      // banner
+      section.banner.banner--v2.section
+        .container 
+          .banner__container 
+            .banner__bg 
+              img(src="img/banner.jpg", alt="")
+            .banner__content 
+              h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
+              .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
+              .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
+              .banner__btn 
+                button.btn.btn--white-border обратится за консультацией
+      // /banner
+
+      // contact
+      section.contact.contact--v2.section
+        .container 
+          form(action="#").contact__form 
+            h2.contact__title Есть проект? <br>Мы на связи
+            .contact__input 
+              input(type="text" name="name" placeholder="Ваше имя" required)
+            .contact__input 
+              input(type="text" name="email" placeholder="Ваш email" required)
+            .contact__select 
+              select(name="business" required) 
+                option(value="" disabled selected hidden) Направление деятельности
+                option(value="#") Деятельность 1
+                option(value="#") Деятельность 2
+                option(value="#") Деятельность 3
+                option(value="#") Деятельность 4
+                option(value="#") Деятельность 5
+                option(value="#") Деятельность 6
+                option(value="#") Деятельность 7
+            .contact__btn 
+              button(type="submit").btn.btn--orange-border Отправить
+            .contact__annotation Нажимая на «Отправить» Вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на обработку Ваших персональных данных
+          .contact__img 
+              img(src="img/contact.jpg", alt="")
+      // /contact
+
+      // telegram
+      section.telegram
+        .container 
+          h2.telegram__title Мы в Telegram
+          .telegram__head 
+            a(href="#").telegram__subtitle Хотите узнать детали у нашего telegram-бота? Легко
+            a(href="#").telegram__arrow 
+              svg(class="icon-arrow-long")
+                use(xlink:href="img/sprite.svg#arrow-long")
+          .telegram__text Наш telegram-бот способен найти ответ на большое количество ваших вопросов и помочь определиться с выбором правильного решения.
+      // /telegram
+
+    include core/footer.pug

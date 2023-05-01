@@ -1,11 +1,1 @@
-<svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3_310)">
-<path d="M26 0H11C10.4477 0 10 0.447715 10 1V8C10 8.55229 10.4477 9 11 9H26C26.5523 9 27 8.55229 27 8V1C27 0.447715 26.5523 0 26 0Z" fill="#0158F3"/>
-<path d="M36 25H32V19.5C32 18.12 30.88 17 29.5 17H20V11.5H17V17H7.5C6.12 17 5 18.12 5 19.5V25H1C0.45 25 0 25.45 0 26V33C0 33.55 0.45 34 1 34H12C12.55 34 13 33.55 13 33V26C13 25.45 12.55 25 12 25H8V20H29V25H25C24.45 25 24 25.45 24 26V33C24 33.55 24.45 34 25 34H36C36.55 34 37 33.55 37 33V26C37 25.45 36.55 25 36 25Z" fill="#0158F3"/>
-</g>
-<defs>
-<clipPath id="clip0_3_310">
-<rect width="37" height="34" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="37" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_3_310)" fill="#0158F3"><path d="M26 0H11a1 1 0 00-1 1v7a1 1 0 001 1h15a1 1 0 001-1V1a1 1 0 00-1-1zm10 25h-4v-5.5a2.5 2.5 0 00-2.5-2.5H20v-5.5h-3V17H7.5A2.5 2.5 0 005 19.5V25H1c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h11c.55 0 1-.45 1-1v-7c0-.55-.45-1-1-1H8v-5h21v5h-4c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h11c.55 0 1-.45 1-1v-7c0-.55-.45-1-1-1z"/></g><defs><clipPath id="clip0_3_310"><path fill="#fff" d="M0 0h37v34H0z"/></clipPath></defs></svg>

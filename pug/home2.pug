@@ -14,9 +14,9 @@ block content
       // welcome2
       section.welcome2
         .container 
-          h1.welcome2__title Разработка цифровых сервисов в помощь вашему бизнесу
-          p.welcome2__text Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
-          .welcome2__btn
+          h1.welcome2__title(data-aos="fade-up") Разработка цифровых сервисов в помощь вашему бизнесу
+          p.welcome2__text(data-aos="fade-up" data-aos-delay="300") Мы предлагаем широкий спектр решений для надежного ускорения работы вашей компании.
+          .welcome2__btn(data-aos="fade-up" data-aos-delay="600")
             button.btn.btn--orange-border обратится за консультацией
       // /welcome2
 
@@ -80,11 +80,11 @@ block content
       // services2
       section.services2.section
         .container
-          h2.title Что мы предлагаем:
+          h2.title(data-aos="fade-up") Что мы предлагаем:
           .services2__items 
             .row.gy-1.gy-md-3
               .col-md-6 
-                .services2__item 
+                .services2__item(data-aos="fade-up")
                   .services2__img 
                     img(src="img/services-images/img1.png", alt="")
                   h3.services2__title Консалтинг
@@ -92,7 +92,7 @@ block content
                     li Помощь в развертывании IT-проектов
                     li Экспертная помощь в проектировании и разработке IT-систем
               .col-md-6 
-                .services2__item 
+                .services2__item(data-aos="fade-up")
                   .services2__img 
                     img(src="img/services-images/img2.png", alt="")
                   h3.services2__title МЛМ-проекты
@@ -103,7 +103,7 @@ block content
                     li Разработка маркетинг-плана
                     li Аудит маркетинг-плана
               .col-md-6 
-                .services2__item 
+                .services2__item(data-aos="fade-up")
                   .services2__img 
                     img(src="img/services-images/img3.png", alt="")
                   h3.services2__title Разработка платформ
@@ -112,7 +112,7 @@ block content
                     li Образовательные платформы
                     li Платежные системы
               .col-md-6 
-                .services2__item 
+                .services2__item(data-aos="fade-up")
                   .services2__img 
                     img(src="img/services-images/img4.png", alt="")
                   h3.services2__title Разработка блокчейн-приложений
@@ -121,14 +121,14 @@ block content
                     li Создание криптовалюты с собственным блокчейном
                     li Разработка децентрализованных приложений
               .col-md-6 
-                .services2__item 
+                .services2__item(data-aos="fade-up")
                   .services2__img 
                     img(src="img/services-images/img5.png", alt="")
                   h3.services2__title Разработка мобильных приложений
                   ul.services2__list
                     li Разработка приложений под IOS и Android
               .col-md-6 
-                .services2__item.services2__item--blue
+                .services2__item.services2__item--blue(data-aos="fade-up")
                   h3.services2__title Есть идея для проекта? Давайте обсудим!
                   p.services2__text Мы готовы помочь вам выработать оптимальный маркетинг-план и пути развития вашего продукта, уже сегодня!
                   .services2__btn 
@@ -223,10 +223,10 @@ block content
             .banner__bg 
               img(src="img/banner.jpg", alt="")
             .banner__content 
-              h2.title Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
-              .banner__sub Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
-              .banner__text Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
-              .banner__btn 
+              h2.title(data-aos="fade-up") Мы — №1 эксперт рынка в области автоматизированных решений для МЛМ-проектов.
+              .banner__sub(data-aos="fade-up") Мы отлично знаем Ваш бизнес изнутри и За нами более 10 лет практического опыта в МЛМ.
+              .banner__text(data-aos="fade-up") Мы будем поддерживать Ваш проект на протяжении всей деятельности. Поможем Вам выстроить международную компанию (есть опыт и готовые решения). Мы обучаем старту и развитию МЛМ-проектов с нуля
+              .banner__btn(data-aos="fade-up") 
                 button.btn.btn--white-border обратится за консультацией
       // /banner
 
@@ -274,12 +274,12 @@ block content
       section.contact.contact--v2.section
         .container 
           form(action="#").contact__form 
-            h2.contact__title Есть проект? <br>Мы на связи
-            .contact__input 
+            h2.contact__title(data-aos="fade-up") Есть проект? <br>Мы на связи
+            .contact__input(data-aos="fade-up") 
               input(type="text" name="name" placeholder="Ваше имя" required)
-            .contact__input 
+            .contact__input(data-aos="fade-up") 
               input(type="text" name="email" placeholder="Ваш email" required)
-            .contact__select 
+            .contact__select(data-aos="fade-up") 
               select(name="business" required) 
                 option(value="" disabled selected hidden) Направление деятельности
                 option(value="#") Деятельность 1
@@ -289,23 +289,23 @@ block content
                 option(value="#") Деятельность 5
                 option(value="#") Деятельность 6
                 option(value="#") Деятельность 7
-            .contact__btn 
+            .contact__btn(data-aos="fade-up") 
               button(type="submit").btn.btn--orange-border Отправить
-            .contact__annotation Нажимая на «Отправить» Вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на обработку Ваших персональных данных
-          .contact__img 
+            .contact__annotation(data-aos="fade-up") Нажимая на «Отправить» Вы соглашаетесь с нашей Политикой конфиденциальности и даете согласие на обработку Ваших персональных данных
+          .contact__img(data-aos="fade-left") 
               img(src="img/contact.jpg", alt="")
       // /contact
 
       // telegram
       section.telegram
         .container 
-          h2.telegram__title Мы в Telegram
+          h2.telegram__title(data-aos="fade-up") Мы в Telegram
           .telegram__head 
-            a(href="#").telegram__subtitle Хотите узнать детали у нашего telegram-бота? Легко
-            a(href="#").telegram__arrow 
+            a(href="#").telegram__subtitle(data-aos="fade-right") Хотите узнать детали у нашего telegram-бота? Легко
+            a(href="#").telegram__arrow(data-aos="fade-left") 
               svg(class="icon-arrow-long")
                 use(xlink:href="img/sprite.svg#arrow-long")
-          .telegram__text Наш telegram-бот способен найти ответ на большое количество ваших вопросов и помочь определиться с выбором правильного решения.
+          .telegram__text(data-aos="fade-up") Наш telegram-бот способен найти ответ на большое количество ваших вопросов и помочь определиться с выбором правильного решения.
       // /telegram
 
     include core/footer.pug
